@@ -1,3 +1,5 @@
+// Updated Header Component with Google Sign-In Button
+
 import React, { useState, useEffect } from "react";
 import Button from "../Button";
 import { toast } from "react-toastify";
@@ -69,7 +71,6 @@ function Header() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submit clicked");
     if (validate()) {
       if (isRegistered) {
         // Login logic
@@ -99,6 +100,10 @@ function Header() {
   const handleLogout = () => {
     localStorage.removeItem("loggedInUser");
     setUser(null); // Reset the logged-in user
+  };
+
+  const handleGoogleSignIn = () => {
+    toast.info("Google Sign-In functionality coming soon!");
   };
 
   return (
@@ -181,8 +186,16 @@ function Header() {
                   <Button text="Back to Login" onClick={switchToLogin} />
                 )}
               </div>
-              {errorMessage && <p className="error">{errorMessage}</p>}
             </form>
+            <div className="google-signin" onClick={handleGoogleSignIn}>
+              <img
+                src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/google-color.png"
+                alt="Google Icon"
+                className="google-icon"
+              />
+              <span>Sign in with Google</span>
+            </div>
+            {errorMessage && <p className="error">{errorMessage}</p>}
           </div>
         </div>
       )}

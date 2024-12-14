@@ -11,6 +11,7 @@
   text-align: center; /* Centers the text inside the button */
   min-width: 80px; /* Ensures the button has a minimum width of 80px */
   color: white; /* Sets the text color to white */
+  height: 20px;
 }
 
 /* Hover effect for the default button */
