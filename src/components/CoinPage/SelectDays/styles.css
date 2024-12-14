@@ -1,0 +1,8 @@
+/* Select Days Container Styles */
+.select-days {
+  display: flex; /* Uses flexbox layout to align children horizontally */
+  align-items: center; /* Vertically centers the children within the container */
+  justify-content: flex-start; /* Aligns the children to the left (start) of the container */
+  gap: 0.5rem; /* Adds a 0.5rem space between each child element */
+  margin-bottom: 1.5rem; /* Adds a margin of 1.5rem below the container */
+}

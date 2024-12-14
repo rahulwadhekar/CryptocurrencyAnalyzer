@@ -1,0 +1,50 @@
+/* Default Button Styles */
+.btn {
+  background-color: var(--blue); /* Sets the background color to the custom --blue variable */
+  padding: 0.45rem 1.5rem; /* Adds padding inside the button */
+  border-radius: 3rem; /* Rounds the corners of the button */
+  font-weight: 600; /* Sets the font weight to make the text bold */
+  font-size: 0.8rem; /* Sets the font size to 0.8rem */
+  text-transform: capitalize; /* Capitalizes the first letter of each word */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  border: 2px solid var(--blue); /* Adds a 2px solid border with the custom --blue color */
+  text-align: center; /* Centers the text inside the button */
+  min-width: 80px; /* Ensures the button has a minimum width of 80px */
+  color: white; /* Sets the text color to white */
+}
+
+/* Hover effect for the default button */
+.btn:hover {
+  box-shadow: 2px 2px 10px rgba(58, 128, 233, 0.5); /* Adds a subtle shadow effect on hover */
+  transition: all 0.5s ease-in-out; /* Smooth transition for the hover effect */
+}
+
+/* Outlined Button Styles */
+.btn-outlined {
+  text-align: center; /* Centers the text inside the button */
+  background-color: var(--black); /* Sets the background color to black */
+  padding: 0.45rem 1.5rem; /* Adds padding inside the button */
+  border-radius: 3rem; /* Rounds the corners of the button */
+  font-weight: 600; /* Sets the font weight to bold */
+  font-size: 0.8rem; /* Sets the font size to 0.8rem */
+  text-transform: capitalize; /* Capitalizes the first letter of each word */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  border: 2px solid var(--blue); /* Adds a 2px solid border with the custom --blue color */
+  min-width: 80px; /* Ensures the button has a minimum width of 80px */
+  color: var(--white); /* Sets the text color to white */
+}
+
+/* Hover effect for the outlined button */
+.btn-outlined:hover {
+  background-color: var(--blue); /* Changes the background color to --blue on hover */
+  transition: all 0.3s; /* Smooth transition for the hover effect */
+}
+
+/* Responsive design for smaller screens */
+@media only screen and (max-width: 800px) {
+  /* Adjust the font size for smaller screens */
+  .btn,
+  .btn-outlined {
+    font-size: 0.8rem; /* Set the font size to 0.8rem for smaller screens */
+  }
+}

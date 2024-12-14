@@ -1,0 +1,144 @@
+/* Main flex container for layout */
+.main-flex {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute items evenly with space between */
+  align-items: flex-start; /* Align items at the start of the flex container */
+  padding: 1rem 3rem; /* Add padding around the container */
+}
+
+/* Heading styles */
+.heading1,
+.heading2 {
+  font-size: 6rem; /* Set large font size for both headings */
+  margin: 0; /* Remove default margin */
+}
+
+/* Hover effect for heading1 */
+.heading1:hover {
+  -webkit-text-stroke-width: 3px; /* Add stroke to the text */
+  -webkit-text-stroke-color: var(--white); /* Set stroke color */
+  color: var(--black); /* Change text color on hover */
+  transition: all 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Style for heading2 */
+.heading2 {
+  color: var(--blue); /* Set color to blue */
+}
+
+/* Info text style */
+.info-text {
+  color: var(--grey); /* Set color to grey */
+  font-weight: 300; /* Use light font weight */
+}
+
+/* Button container styling */
+.btn-flex {
+  display: flex; /* Use flexbox layout */
+  gap: 1rem; /* Add spacing between buttons */
+  margin-top: 1.5rem; /* Add top margin */
+}
+
+/* Container for gradient with specific positioning */
+.gradient-div {
+  position: relative; /* Set position to relative for absolute child elements */
+  width: 50%; /* Set width to 50% */
+  margin-left: auto; /* Align to the right */
+}
+
+/* Gradient element styling */
+.gradient {
+  position: absolute; /* Absolutely position the gradient */
+  right: 0px; /* Align to the right */
+  top: 80px; /* Offset from the top */
+  width: 250px; /* Set width */
+}
+
+/* iPhone image positioning */
+.iphone {
+  position: absolute; /* Absolutely position the iPhone image */
+  right: 10px; /* Align to the right with a small offset */
+  width: 300px; /* Set width of the iPhone image */
+}
+
+/* Responsive styles for larger screens */
+@media only screen and (max-width: 1350px) {
+  .heading1,
+  .heading2 {
+    font-size: 5rem; /* Reduce font size for smaller screens */
+  }
+}
+
+/* Responsive styles for medium screens */
+@media only screen and (max-width: 1050px) {
+  .heading1,
+  .heading2 {
+    font-size: 4rem; /* Further reduce font size for even smaller screens */
+  }
+
+  /* Adjust gradient positioning */
+  .gradient {
+    right: 0px; /* Align gradient to the right */
+    top: 60px; /* Offset top position */
+    width: 200px; /* Reduce width */
+  }
+
+  /* Adjust iPhone image size */
+  .iphone {
+    right: 0px; /* Align iPhone image to the right */
+    width: 250px; /* Adjust width */
+  }
+}
+
+/* Responsive styles for small screens */
+@media only screen and (max-width: 800px) {
+  .heading1,
+  .heading2 {
+    font-size: 2rem; /* Significantly reduce font size for small screens */
+  }
+
+  /* Adjust layout for mobile */
+  .main-flex {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items */
+    align-items: center; /* Center items horizontally */
+  }
+
+  /* Align text to the center */
+  .heading1,
+  .heading2,
+  .info-text {
+    text-align: center; /* Center text */
+  }
+
+  /* Adjust info text size */
+  .info-text {
+    font-size: 0.8rem; /* Reduce font size */
+  }
+
+  /* Center buttons */
+  .btn-flex {
+    justify-content: center; /* Center the buttons */
+    width: 100%; /* Ensure buttons take full width */
+  }
+
+  /* Adjust gradient positioning on mobile */
+  .gradient-div {
+    margin-top: 3rem; /* Add margin at the top */
+    margin-right: auto; /* Align to the left */
+  }
+}
+
+/* Additional styles for the iPhone and gradient on mobile */
+@media only screen and (max-width: 800px) {
+  .gradient,
+  .iphone {
+    left: 0px; /* Align elements to the left */
+  }
+
+  .iphone {
+    left: -30px; /* Offset iPhone image to the left */
+  }
+}
+
+/* Formula for responsive text scaling */

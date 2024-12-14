@@ -1,0 +1,24 @@
+/* Grid container styling */
+.grid-flex {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow items to wrap to the next line when needed */
+  width: 100%; /* Take up the full width of the container */
+  gap: 1rem; /* Add spacing between items */
+}
+
+/* List container styling */
+.list-flex {
+  width: 90%; /* Set width to 90% to keep it centered with some margin */
+  display: block; /* Display as block for proper layout */
+  margin-left: auto; /* Automatically adjust left margin for centering */
+  margin-right: auto; /* Automatically adjust right margin for centering */
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 600px) {
+  .list-flex {
+    width: 100%; /* Set width to 100% on small screens for better layout */
+  }
+}

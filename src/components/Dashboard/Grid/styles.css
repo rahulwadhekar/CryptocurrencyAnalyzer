@@ -1,0 +1,152 @@
+/* Grid container for coins or items */
+.grid {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Align items in a column */
+  gap: 1.5rem; /* Add space between items */
+  width: 250px; /* Set fixed width */
+  padding: 2rem; /* Add padding inside the container */
+  background-color: var(--darkgrey); /* Set background color */
+  border-radius: 0.8rem; /* Round the corners */
+  border: 2px solid var(--darkgrey); /* Add a border with color */
+  cursor: pointer; /* Change the cursor to pointer when hovering */
+}
+
+/* Hover effect for the grid, changing border color */
+.grid:hover {
+  border: 2px solid var(--green); /* Change border color to green on hover */
+  transition: all 0.3s; /* Smooth transition effect */
+}
+
+/* Hover effect for a red-themed grid */
+.grid-red:hover {
+  border: 2px solid var(--red); /* Change border color to red on hover */
+  transition: all 0.3s; /* Smooth transition effect */
+}
+
+/* Flexbox layout for the image container */
+.img-flex {
+  display: flex; /* Enable flexbox layout */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Vertically center items */
+  gap: 1rem; /* Space between items */
+}
+
+/* Flexbox layout for the icon container */
+.icon-flex {
+  display: flex; /* Enable flexbox layout */
+  width: 100%; /* Use full width of the container */
+  justify-content: space-between; /* Space out items between the left and right edges */
+  align-items: center; /* Vertically center items */
+}
+
+/* Style for the watchlist icon */
+.watchlist-icon {
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  border: 2px solid var(--green); /* Green border */
+  border-radius: 50%; /* Make the icon round */
+  color: var(--green); /* Set icon color to green */
+  padding: 0.5rem; /* Add padding around the icon */
+  height: 1.5rem; /* Set height */
+  width: 1.5rem !important; /* Set width (with higher priority) */
+}
+
+/* Style for the red-themed watchlist icon */
+.watchlist-icon-red {
+  border: 2px solid var(--red); /* Red border */
+  color: var(--red); /* Red color */
+}
+
+/* Style for the coin image */
+.coin-image {
+  height: 3rem; /* Set height */
+  width: 3rem; /* Set width */
+  border-radius: 50%; /* Round the image */
+}
+
+/* Flexbox layout for information container */
+.info-flex {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Space out items */
+  gap: 0.2rem; /* Add space between items */
+}
+
+/* Style for the coin symbol (uppercase and bold) */
+.coin-symbol {
+  text-transform: uppercase; /* Make the text uppercase */
+  font-weight: 600; /* Make the text bold */
+  margin: 0rem; /* Remove margin */
+}
+
+/* Style for the coin name (light weight and gray) */
+.coin-name {
+  margin: 0; /* Remove margin */
+  font-weight: 400; /* Set font weight to normal */
+  color: var(--grey); /* Set text color to gray */
+  font-size: 0.8rem; /* Set font size */
+}
+
+/* Flexbox layout for the chip container */
+.chip-flex {
+  display: flex; /* Enable flexbox layout */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Vertically center items */
+  gap: 0.75rem; /* Add space between items */
+}
+
+/* Style for the price chip (green border and text) */
+.price-chip {
+  border: 2px solid var(--green); /* Green border */
+  border-radius: 2rem; /* Round the corners */
+  padding: 0.25rem 1rem; /* Add padding inside the chip */
+  font-weight: 600; /* Make the text bold */
+  color: var(--green); /* Green text color */
+}
+
+/* Hover effect for the price chip and icon */
+.price-chip:hover,
+.chip-icon:hover {
+  background-color: var(--green); /* Set background to green */
+  color: var(--white); /* Change text color to white */
+  transition: all 0.3s; /* Smooth transition effect */
+}
+
+/* Style for the chip icon (green border and text) */
+.chip-icon {
+  border: 2px solid var(--green); /* Green border */
+  padding: 0.2rem; /* Add padding inside the icon */
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  border-radius: 50%; /* Round the icon */
+  color: var(--green); /* Green text color */
+}
+
+/* Style for the red price chip (red border and text) */
+.red {
+  border: 2px solid var(--red) !important; /* Red border */
+  color: var(--red); /* Red text color */
+}
+
+/* Hover effect for the red price chip */
+.red:hover {
+  background-color: var(--red) !important; /* Set background to red */
+  color: var(--white) !important; /* Change text color to white */
+  transition: all 0.3s; /* Smooth transition effect */
+}
+
+/* Style for the current price (green color) */
+.current-price,
+.current-price-red {
+  color: var(--green); /* Green text color */
+  font-weight: 600; /* Bold text */
+  font-size: 1.1rem; /* Larger font size */
+  margin: 0; /* Remove margin */
+}
+
+/* Style for the current price when it's red */
+.current-price-red {
+  color: var(--red) !important; /* Red text color */
+}

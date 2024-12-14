@@ -1,0 +1,16 @@
+/* Info Component Header Styles */
+.info-component h1 {
+  font-size: 1.2rem; /* Set font size for the header */
+  margin: 0; /* Remove any default margin */
+}
+
+/* Link Styles within the .info-p class */
+.info-p a {
+  text-decoration: underline; /* Underline the links */
+}
+
+/* Link Hover Styles */
+.info-p a:hover {
+  color: var(--blue) !important; /* Change the color of the link to blue on hover */
+  transition: all 0.3s; /* Smooth transition for all properties on hover */
+}

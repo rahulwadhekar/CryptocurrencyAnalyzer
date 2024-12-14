@@ -1,0 +1,7 @@
+/* Pagination container styling */
+.pagination-div {
+  display: flex; /* Enable flexbox layout for alignment */
+  align-items: center; /* Vertically center the items within the container */
+  justify-content: center; /* Horizontally center the items within the container */
+  margin: 3rem; /* Add margin around the container for spacing */
+}

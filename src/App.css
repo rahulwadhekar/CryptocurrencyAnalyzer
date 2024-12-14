@@ -1,0 +1,29 @@
+/* Styles for the "Back to Top" button */
+.top-btn {
+  position: fixed; /* Fix the button to a specific position on the screen */
+  display: none; /* Initially hide the button */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  width: 3rem; /* Set the width of the button */
+  height: 3rem; /* Set the height of the button */
+  border-radius: 50%; /* Make the button circular */
+  background-color: var(--darkgrey); /* Set background color */
+  border: 2px solid var(--blue); /* Add border with blue color */
+  font-size: 2rem; /* Set font size for the icon */
+  bottom: 1rem; /* Position the button 1rem from the bottom */
+  right: 1rem; /* Position the button 1rem from the right */
+  z-index: 1000; /* Ensure the button is above other content */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  color: var(--white); /* Set text color to white */
+}
+
+/* Styles for the grey wrapper container */
+.grey-wrapper {
+  background-color: var(--darkgrey); /* Set the background color to dark grey */
+  padding: 1rem; /* Add padding around the content */
+  padding-bottom: 0.5rem; /* Reduce padding at the bottom */
+  border-radius: 1rem; /* Round the corners of the container */
+  width: 90%; /* Set the container width to 90% of the parent */
+  display: block; /* Ensure it behaves as a block-level element */
+  margin: 1.5rem auto; /* Center the container horizontally with top and bottom margin */
+}

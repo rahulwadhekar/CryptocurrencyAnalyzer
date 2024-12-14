@@ -1,0 +1,49 @@
+/* Optimized Loader Background Styles */
+.loader-background {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for a softer look */
+  position: fixed; /* Fixed to the viewport */
+  top: 0; /* Align to the top of the page */
+  left: 0; /* Align to the left of the page */
+  z-index: 1000; /* Ensure loader is above other content */
+  animation: fade-in 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Smooth Fade-In Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Loader Spinner Styles */
+.loader {
+  width: 50px; /* Adjust size for better visibility */
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.2); /* Lighter outer border */
+  border-top: 4px solid #fff; /* Solid white for the spinner effect */
+  border-radius: 50%; /* Circle shape */
+  animation: spin 1s linear infinite; /* Smooth spinning animation */
+}
+
+/* Spinning Animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .loader {
+    width: 40px; /* Smaller loader for small screens */
+    height: 40px;
+  }
+}

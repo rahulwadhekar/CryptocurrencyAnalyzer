@@ -1,0 +1,200 @@
+/* Root Variables for Better Maintainability */
+:root {
+  --blue: #0056b3;
+  --green: #28a745;
+  --green-hover: #218838;
+  --header-bg: #1e1e1e;
+  --link-color: #aaa;
+  --link-hover: #fff;
+  --button-bg: var(--blue);
+  --button-hover-bg: #004494;
+  --popup-bg: rgba(0, 0, 0, 0.6);
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--blue);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header .links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.header .link {
+  font-size: 1rem;
+  color: var(--link-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.header .link:hover {
+  color: var(--link-hover);
+}
+
+.header .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.header button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.header button.signup {
+  background-color: var(--green);
+}
+
+.header button.signup:hover {
+  background-color: var(--green-hover);
+}
+
+/* Login Popup Styles */
+.login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--popup-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.login-popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.login-popup-content:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.login-popup-content .close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.login-popup-content .close-button:hover {
+  color: #ff0000;
+}
+
+.login-popup-content h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.login-popup-content .form-group {
+  margin-bottom: 1rem;
+}
+
+.login-popup-content input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-popup-content .form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.login-popup-content .form-actions button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.login-popup-content .error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .header .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .header .buttons {
+    margin-top: 1rem;
+  }
+
+  .login-popup-content {
+    max-width: 90%;
+  }
+}
+
+@media (hover: hover) {
+  .header .link:hover {
+    color: var(--link-hover);
+  }
+
+  .header button:hover {
+    background-color: var(--button-hover-bg);
+  }
+}

@@ -1,0 +1,125 @@
+/* Styles for the list row container */
+.list-row {
+  width: 90%; /* Set width to 90% of the container */
+  padding: 1rem 2rem; /* Add padding for spacing */
+  margin-bottom: 0.5rem !important; /* Add margin at the bottom */
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Space out items evenly */
+  align-items: center; /* Vertically center items */
+  margin-left: auto; /* Center the list row horizontally */
+  margin-right: auto; /* Center the list row horizontally */
+  border-radius: 0.8rem; /* Round the corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect for the list row */
+.list-row:hover {
+  background-color: var(--darkgrey); /* Change background color on hover */
+  transition: all 0.3s; /* Smooth transition effect */
+}
+
+/* Styling for each table cell inside the list row */
+.list-row td {
+  width: 20%; /* Set width to 20% for each table cell */
+  text-align: left; /* Align text to the left */
+}
+
+/* Specific styling for table cells containing images */
+.td-img {
+  width: 3rem !important; /* Set image cell width to 3rem */
+  margin-right: 1rem; /* Add margin to the right of the image */
+}
+
+/* Styling for table cells containing information (coin name, etc.) */
+.td-info {
+  width: 10rem !important; /* Set info cell width to 10rem */
+}
+
+/* Styling for table cells displaying current price */
+.td-current-price {
+  width: 6rem !important; /* Set current price cell width */
+  text-align: right !important; /* Align current price text to the right */
+}
+
+/* Styling for table cells displaying total volume and market cap */
+.td-totalVolume,
+.td-marketCap {
+  text-align: right !important; /* Align total volume and market cap to the right */
+}
+
+/* Mobile view adjustments (hidden by default) */
+.mobile {
+  display: none; /* Hide mobile-specific content by default */
+}
+
+/* Media query for screens smaller than 900px (table on mobile) */
+@media only screen and (max-width: 900px) {
+  /* Hide chip icon for smaller screens */
+  .td-chip-icon {
+    display: none; 
+  }
+
+  /* Reduce font size for table cells */
+  .list-row td {
+    font-size: 0.7rem;
+  }
+
+  /* Hide total volume column */
+  .td-totalVolume {
+    display: none;
+  }
+
+  /* Change current price cell alignment to center */
+  .td-current-price {
+    text-align: center !important;
+  }
+
+  /* Adjust list row padding and width for small screens */
+  .list-row {
+    width: 100%; /* Full width */
+    padding: 1.5rem 0rem; /* Add padding on top and bottom */
+  }
+
+  /* Resize coin image in the table */
+  .coin-image-td {
+    height: 2rem; /* Set height to 2rem */
+    width: 2rem; /* Set width to 2rem */
+  }
+
+  /* Adjust info column width */
+  .td-info {
+    width: 6rem !important; /* Set info column width to 6rem */
+  }
+}
+
+/* Media query for screens smaller than 600px (more compact for mobile) */
+@media only screen and (max-width: 600px) {
+  /* Hide market cap and chip icon columns */
+  .td-marketCap,
+  .td-chip-icon {
+    display: none !important; 
+  }
+
+  /* Show mobile-specific content */
+  .mobile {
+    display: block !important; /* Show the mobile view */
+    text-align: left !important; /* Align mobile content to the left */
+  }
+
+  /* Further reduce font size for better readability on small screens */
+  .list-row td,
+  .td-p {
+    font-size: 0.6rem !important; /* Set font size to 0.6rem */
+  }
+
+  /* Adjust info column width for mobile */
+  .td-info {
+    width: 4rem !important; /* Set info column width to 4rem */
+  }
+
+  /* Adjust coin image size for mobile */
+  .coin-image-td {
+    height: 2rem !important; /* Set height to 2rem */
+    width: 2rem !important; /* Set width to 2rem */
+  }
+}

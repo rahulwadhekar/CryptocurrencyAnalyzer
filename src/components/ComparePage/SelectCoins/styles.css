@@ -1,0 +1,46 @@
+/* Container for Selecting Coins */
+.select-coins-div {
+  display: flex; /* Flexbox layout for alignment */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Center items vertically */
+  gap: 1rem; /* Reduced gap for compact layout */
+  padding: 1.5rem; /* Added padding inside the container for spacing */
+  margin: 2rem auto; /* Center container horizontally with top-bottom spacing */
+  flex-wrap: wrap; /* Allow wrapping for responsive design */
+  background-color: #f9f9f9; /* Light background for visual separation */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Flex Container for Specific Selection Elements */
+.select-flex {
+  display: flex; /* Flexbox layout */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Center items vertically */
+  gap: 0.8rem; /* Reduced gap for compact arrangement */
+  padding: 0.5rem 1rem; /* Padding for a cleaner layout */
+  background-color: #ffffff; /* White background for individual flex items */
+  border: 1px solid #ddd; /* Light border for better distinction */
+  border-radius: 4px; /* Slight rounding for consistency */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Hover Effects */
+.select-flex:hover {
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .select-coins-div {
+    gap: 0.8rem; /* Reduce gap on smaller screens */
+    padding: 1rem; /* Adjust padding for smaller screens */
+    margin: 1rem; /* Reduce margin for better fit */
+  }
+
+  .select-flex {
+    gap: 0.5rem; /* Reduce gap for compact layout */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
+}

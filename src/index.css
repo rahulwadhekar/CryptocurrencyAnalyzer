@@ -1,0 +1,118 @@
+/* Importing the "Inter" font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700&display=swap");
+
+/* Defining custom CSS variables for colors used across the website */
+:root {
+  --white: #fff; /* White color */
+  --black: #111; /* Black color */
+  --blue: #3a80e9; /* Blue color */
+  --grey: #888; /* Grey color */
+  --darkgrey: #1b1b1b; /* Dark grey color */
+  --green: #61c96f; /* Green color */
+  --red: #f94141; /* Red color */
+}
+
+/* Dark theme styles */
+[data-theme="dark"] {
+  --white: #ffffff; /* White color for dark theme */
+  --black: #111; /* Black color for dark theme */
+  --grey: #888; /* Grey color for dark theme */
+  --darkgrey: #1b1b1b; /* Dark grey color for dark theme */
+}
+
+/* Light theme styles */
+[data-theme="light"] {
+  --white: #111; /* White color for light theme */
+  --black: #fff; /* Black color for light theme */
+  --grey: #888; /* Grey color for light theme */
+  --darkgrey: #f3f3f3; /* Light grey color for light theme */
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General body styles */
+body {
+  margin: 0; /* Remove default margin */
+  font-family: "Inter", sans-serif; /* Use "Inter" font */
+  -webkit-font-smoothing: antialiased; /* Improve font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Improve font rendering for macOS */
+  background-color: var(--black); /* Set background color to black */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Default text color for all heading and text elements */
+h1, h2, h3, h4, h5, h6, p, span {
+  color: var(--white); /* Set text color to white */
+}
+
+/* Style for text selection */
+::selection {
+  background-color: var(--blue); /* Set background color when text is selected */
+  color: var(--white); /* Set text color when selected */
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 0.3rem; /* Set width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black); /* Set the scrollbar track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue); /* Set the scrollbar thumb color */
+  border-radius: 10px; /* Round the edges of the scrollbar thumb */
+}
+
+/* Prevent images from being draggable */
+img {
+  -webkit-user-drag: none; /* Disable drag for WebKit browsers */
+  -khtml-user-drag: none; /* Disable drag for Konqueror browsers */
+  -moz-user-drag: none; /* Disable drag for Firefox */
+  -o-user-drag: none; /* Disable drag for Opera */
+}
+
+/* Styling links to remove underline and set color */
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: var(--white) !important; /* Set link color to white */
+}
+
+/* Custom cursor styles for non-pointer elements */
+.cursor {
+  position: fixed; /* Fix the cursor in position */
+  transform: translateX(-50%) translateY(-50%); /* Center the cursor */
+  pointer-events: none; /* Prevent the cursor from interacting with elements */
+  background-color: var(--blue); /* Set cursor background color to blue */
+  z-index: 10000; /* Ensure the cursor is always on top */
+  border: 2px solid var(--blue); /* Add border around the cursor */
+  height: 0.3rem; /* Set cursor height */
+  width: 0.3rem; /* Set cursor width */
+  border-radius: 50%; /* Make the cursor circular */
+  transition: all 200ms ease-out; /* Smooth transition for cursor changes */
+}
+
+/* Custom cursor style for pointer elements */
+.cursor-pointer {
+  position: fixed; /* Fix the cursor in position */
+  transform: translateX(-50%) translateY(-50%); /* Center the cursor */
+  pointer-events: none; /* Prevent the cursor from interacting with elements */
+  background-color: transparent; /* Make the cursor background transparent */
+  border-radius: 50%; /* Make the cursor circular */
+  z-index: 10000; /* Ensure the cursor is always on top */
+  border: 2px solid var(--blue); /* Add border around the cursor */
+  height: 2rem; /* Set cursor height */
+  width: 2rem; /* Set cursor width */
+  transition: all 400ms ease-out; /* Smooth transition for cursor changes */
+}
+
+/* Hide the custom cursors on small screens */
+@media only screen and (max-width: 600px) {
+  .cursor-pointer, .cursor {
+    display: none; /* Hide the cursor on mobile screens */
+  }
+}

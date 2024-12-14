@@ -1,0 +1,53 @@
+/* Search container styling */
+.search-flex {
+  width: 80%; /* Set width to 80% for responsive layout */
+  display: flex; /* Use flexbox for easy layout and alignment */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Vertically align items in the center */
+  gap: 1rem; /* Add spacing between items */
+  margin-left: auto; /* Center align the container horizontally */
+  margin-right: auto; /* Center align the container horizontally */
+  background-color: var(--darkgrey); /* Dark background color */
+  padding: 0.75rem 1.5rem; /* Padding inside the search container */
+  border-radius: 2rem; /* Rounded corners for the container */
+  margin-top: 1.5rem; /* Add margin at the top for spacing */
+  margin-bottom: 1.5rem; /* Add margin at the bottom for spacing */
+}
+
+/* Search input field styling */
+.search-input {
+  background-color: var(--darkgrey); /* Match input background with the container */
+  color: var(--grey); /* Set text color */
+  font-family: "Inter", sans-serif; /* Use 'Inter' font for input */
+  font-size: 1rem; /* Set font size for input text */
+  border: none; /* Remove default border */
+  width: 100%; /* Make input take full width of the container */
+}
+
+/* Focus state for input */
+.search-input:focus {
+  outline: none; /* Remove the default outline when the input is focused */
+}
+
+/* Responsive adjustments for smaller screen sizes */
+@media only screen and (max-width: 768px) {
+  .search-flex {
+    width: 90%; /* Increase width on smaller screens */
+    padding: 0.75rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .search-input {
+    font-size: 0.9rem; /* Slightly decrease font size on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .search-flex {
+    width: 95%; /* Increase width even further for very small screens */
+    padding: 0.75rem 0.5rem; /* Adjust padding for tiny screens */
+  }
+
+  .search-input {
+    font-size: 0.8rem; /* Decrease font size even further for tiny screens */
+  }
+}
