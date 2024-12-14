@@ -56,7 +56,7 @@ Follow these steps to get the project up and running locally:
 
 1. Clone the repository:
    ```bash
-   git clone
+   git clone https://github.com/rahulwadhekar/CryptocurrencyAnalyzer.git
 
    cd cryptocurrency-dashboard
    npm install
