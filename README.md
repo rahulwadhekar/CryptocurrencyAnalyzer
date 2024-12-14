@@ -59,9 +59,11 @@ Follow these steps to get the project up and running locally:
    git clone
 
    cd cryptocurrency-dashboard
-npm install
+   npm install
+   npm start
 
-npm start
+
+
 
 
 
