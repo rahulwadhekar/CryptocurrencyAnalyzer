@@ -1,3 +1,8 @@
+![Screenshot 2024-12-18 194725](https://github.com/user-attachments/assets/5b71628f-b1e0-4ea3-bc2d-e04d0418c675)
+
+
+
+
 # Cryptocurrency Dashboard
 
 A modern cryptocurrency dashboard web application that provides real-time data about cryptocurrencies.
